@@ -1,4 +1,4 @@
-let current_threat = 0
+let current_threat = 280
 let current_score = 0
 
 function addStep(baseXp) {
