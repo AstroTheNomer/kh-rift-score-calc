@@ -10,7 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script defer src="main.js"></script>
@@ -18,18 +18,22 @@
 
 <body>
     <div class="container p-3">
-    <div class="row">
-        <div class="col text-center">
-            <h1>EXPERT Rift Score Calculator</h1>
-        </div>
-    </div>
         <div class="row">
-            <div class="col-12 col-md">
-                <h2>Threat: <span id="threat">280</span></h2>
+            <div class="col text-center">
+                <h1>Rift Score Calculator</h1>
+                <h3>
+                    <button class="btn btn-lg btn-link" onclick="setNormal()">Normal</button> | <button class="btn btn-lg btn-link"
+                        onclick="setExpert()">Expert</button>
+                </h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md">
+            <div class="col-12 col-sm">
+                <h2>Threat: <span id="threat">0</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm">
                 <h2>Island: </h2>
             </div>
             <div class="col d-grid">
@@ -43,7 +47,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md">
+            <div class="col-12 col-sm">
                 <h2>Threat: </h2>
             </div>
             <div class="col d-grid">
@@ -54,7 +58,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md">
+            <div class="col-12 col-sm">
                 <h2>Score: <span id="score">0</span></h2>
             </div>
         </div>
